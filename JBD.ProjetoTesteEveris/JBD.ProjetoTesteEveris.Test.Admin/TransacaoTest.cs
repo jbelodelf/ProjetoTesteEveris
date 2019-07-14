@@ -188,6 +188,41 @@ namespace JBD.ProjetoTesteEveris.Test.Admin
 
         [Theory]
         [InlineData(0)]
+        [InlineData(3)]
+        public void NaoDeveTransacaoConterUmTipoOperacaoMenorQue1NemMairQue2(int TipoOperacaoInvalida)
+        {
+            //Arrange
+            var TransacaoEsperada = new
+            {
+                CdTransacao = (int)0,
+                AgContaOrigem = "0123",
+                NumContaOrigem = "101234",
+                AgContaDestino = "0123",
+                NumContaDestino = "104321",
+                TipoOperacao = (int)TipoOperacaoEnum.Credito,
+                ValorOperacao = 100.00M,
+                DataOperacao = DateTime.Now,
+            };
+            var contaTransacaoEntity = new ContaTransacaoEntity();
+
+            //Assert
+            var message = Assert.Throws<ArgumentException>(() =>
+            contaTransacaoEntity.ValidaContaTransacaoEntity(
+                    TransacaoEsperada.CdTransacao,
+                    TransacaoEsperada.AgContaOrigem,
+                    TransacaoEsperada.NumContaOrigem,
+                    TransacaoEsperada.AgContaDestino,
+                    TransacaoEsperada.NumContaDestino,
+                    TipoOperacaoInvalida,
+                    TransacaoEsperada.ValorOperacao,
+                    TransacaoEsperada.DataOperacao
+                )
+            ).Message;
+            Assert.Equal("Tipo de operação inválido", message);
+        }
+
+        [Theory]
+        [InlineData(0)]
         [InlineData(-0)]
         public void NaoDeveTransacaoConterUmValorOperacaoMenorQue1(decimal ValorOperacaoInvalida)
         {

@@ -39,8 +39,8 @@ namespace JBD.ProjetoTesteEveris.Domain.Services
 
         public void Salvar(ContaTransacaoDTO contaTransacao)
         {
-            try
-            {
+            //try
+            //{
                 bool processarTransacao_Ok = false;
 
                 var transacaoValida = _validarTransacaoService.TransacaoValida(contaTransacao);
@@ -58,11 +58,11 @@ namespace JBD.ProjetoTesteEveris.Domain.Services
                 {
                     throw new ArgumentException("Ocorreu uma falha na transação");
                 }
-            }
-            catch (Exception ex)
-            {
-                throw new ArgumentException("Ocorreu uma falha na transação");
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    throw new ArgumentException("Ocorreu uma falha na transação");
+            //}
         }
 
         public void Atualizar(ContaTransacaoDTO contaTransacao)

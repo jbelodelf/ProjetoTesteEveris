@@ -50,3 +50,17 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/JBD.ProjetoTesteEveris/.vs/JBD.ProjetoTesteEveris/v15
+/JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.Application/obj/Debug/netcoreapp2.2
+/JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.Application/obj
+/JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.CrossCutting/obj/Debug/netcoreapp2.2
+/JBD.ProjetoTesteEveris/.vs/config
+/JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.CrossCutting/obj
+/JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.Data/obj/Debug/netcoreapp2.2
+/JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.Data/obj
+/JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.Domain/obj/Debug/netcoreapp2.2
+/JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.Domain/obj
+/JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.Test.Admin/obj
+/JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.WebAdmin/obj/Debug/netcoreapp2.2
+/JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.WebAdmin/obj
+/JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.WebApiAdmin/obj

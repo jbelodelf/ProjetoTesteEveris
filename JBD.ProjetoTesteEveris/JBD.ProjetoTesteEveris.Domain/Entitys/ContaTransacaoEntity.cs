@@ -27,6 +27,8 @@ namespace JBD.ProjetoTesteEveris.Domain.Entitys
                 throw new ArgumentException("Agência destino inválida");
             if (String.IsNullOrEmpty(NumContaDestino))
                 throw new ArgumentException("Conta destino inválida");
+            if (TipoOperacao < 2 || TipoOperacao > 2)
+                throw new ArgumentException("Tipo de operação inválido");
             if (ValorOperacao < 1)
                 throw new ArgumentException("Valor da transação inválida");
             if (DataOperacao == Convert.ToDateTime("01/01/0001 00:00:00"))

@@ -1,5 +1,4 @@
-﻿using JBD.ProjetoTesteEveris.Domain.Enuns;
-using System;
+﻿using System;
 
 namespace JBD.ProjetoTesteEveris.Domain.DTOS
 {
@@ -10,7 +9,7 @@ namespace JBD.ProjetoTesteEveris.Domain.DTOS
         public string NumContaOrigem { get; set; }
         public string AgContaDestino { get; set; }
         public string NumContaDestino { get; set; }
-        public int TipoOperacao { get; set; }
+        public int TipoOperacao { get; set; } 
         public decimal ValorOperacao { get; set; }
         public DateTime DataOperacao { get; set; }
     }
