@@ -1,0 +1,28 @@
+# INSTRUÇÕES
+
+- Na pasta [Documentos do projeto], contém os arquivos de script SQL-SERVER [DDL] e [DML], 
+também o arquuivo [Teste_Backend_Superdigital___novo.docx] com as resposta da três pergunta.
+
+- PROJETO DESENVOLVIDO COM ASPNET CORE 2.2
+
+## PARA TESTAR O PROJETO
+1) - BAIXAR O PROJETO EM UMA MAQUINA LOCAL
+2) - EXECUTAR O SCRIPT DE BANDO [DDL.sql]
+3) - EXECUTAR O SCRIPT DE BANCO [DML.sql]
+4) - NECESSITA TER O PACKAGE ASP.NET CORE 2.2
+5) - ABRIR O VISUAL STUDIO 2017
+6) - FAZER BUILD DO PROJETO, PORQUE NÃO CONTEM AS PASTAS OBJ E BIN.
+
+7) - OBJETO EXEMPLO PARA TESTE:
+{
+  "cdTransacao": 0,
+  "agContaOrigem": "0123",
+  "numContaOrigem": "10123",
+  "agContaDestino": "0123",
+  "numContaDestino": "20125",
+  "tipoOperacao": 2,
+  "valorOperacao": 500,
+  "dataOperacao": "2019-07-14 18:05:05"
+}
+
+OBS: tipoOperacao = DEVE SER SEMPRE 2-Crédito
