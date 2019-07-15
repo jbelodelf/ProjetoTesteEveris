@@ -18,7 +18,7 @@ namespace JBD.ProjetoTesteEveris.WebApiAdmin.Controllers
         }
 
         [AcceptVerbs("GET")]
-        [Route("ListarTransacoes")]
+        [Route("ListarTransacoes/{agOrigem}/{numContaOrigem}")]
         public ObjectResult Get(string agOrigem, string numContaOrigem)
         {
             try
