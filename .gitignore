@@ -64,3 +64,8 @@ dkms.conf
 /JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.WebAdmin/obj/Debug/netcoreapp2.2
 /JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.WebAdmin/obj
 /JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.WebApiAdmin/obj
+/JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.WebApiAdmin/bin/Release/netcoreapp2.2
+/JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.Application/bin/Release/netcoreapp2.2
+/JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.CrossCutting/bin/Release/netcoreapp2.2/JBD.ProjetoTesteEveris.CrossCutting.deps.json
+/JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.Data/bin/Release/netcoreapp2.2/JBD.ProjetoTesteEveris.Data.deps.json
+/JBD.ProjetoTesteEveris/JBD.ProjetoTesteEveris.Domain/bin/Release/netcoreapp2.2/JBD.ProjetoTesteEveris.Domain.deps.json
