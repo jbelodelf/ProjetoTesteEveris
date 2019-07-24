@@ -27,22 +27,26 @@ namespace JBD.ProjetoTesteEveris.Domain.Services.Validar
                     contaTransacaoDTO.ValorOperacao,
                     contaTransacaoDTO.DataOperacao
                 );
+            return true;
+        }
 
+        public bool ValidaContasOrigemDestino(ContaTransacaoDTO contaTransacaoDTO)
+        {
             var listaDeContas = _conta.ListarContas(contaTransacaoDTO.AgContaOrigem, contaTransacaoDTO.NumContaOrigem, contaTransacaoDTO.AgContaDestino, contaTransacaoDTO.NumContaDestino);
 
             if (listaDeContas.Count == 0)
-                throw new AggregateException("Nenhum conta foi localizada");
+                throw new ArgumentException("Nenhum conta foi localizada");
 
             var ContaOrigem = listaDeContas.Find(c => c.ContaAgencia == contaTransacaoDTO.AgContaOrigem && c.ContaNumero == contaTransacaoDTO.NumContaOrigem);
             if (ContaOrigem == null)
-                throw new AggregateException("Conta origem não localizada");
+                throw new ArgumentException("Conta origem não localizada");
 
             if (ContaOrigem.Saldo < contaTransacaoDTO.ValorOperacao)
-                throw new AggregateException("Saldo insuficiente");
+                throw new ArgumentException("Saldo insuficiente");
 
             var ContaDestino = listaDeContas.Find(c => c.ContaAgencia == contaTransacaoDTO.AgContaDestino && c.ContaNumero == contaTransacaoDTO.NumContaDestino);
             if (ContaDestino == null)
-                throw new AggregateException("Conta destino não localizada");
+                throw new ArgumentException("Conta destino não localizada");
 
             return true;
         }

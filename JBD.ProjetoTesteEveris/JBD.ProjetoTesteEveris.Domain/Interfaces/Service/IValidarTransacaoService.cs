@@ -5,5 +5,6 @@ namespace JBD.ProjetoTesteEveris.Domain.Interfaces.Service
     public interface IValidarTransacaoService
     {
         bool TransacaoValida(ContaTransacaoDTO contaTransacaoDTO);
+        bool ValidaContasOrigemDestino(ContaTransacaoDTO contaTransacaoDTO);
     }
 }
